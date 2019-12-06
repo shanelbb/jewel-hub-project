@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow:400,500|Cardo:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35da8f1ae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Shanel's SCSS Project 2</title>
+  </head>
+  <body>
+    <header>
+      <!-- Header wrapper starts here -->
+      <div class="wrapper">
+        <!-- Logo and Nav Bar here -->
+        <section class="headerTop">
+          <div class="logo">
+            <p>Jewel</p>
+            <p class="logoBefore">Hub</p>
+          </div>
+
+          <!-- Mobile hamburger menu starts here -->
+          <div>
+            <label for="toggle" class="toggle"
+              ><i class="fas fa-bars"></i
+            ></label>
+            <input type="checkbox" id="toggle" class="toggle" />
+            <ul class="hiddeNav">
+              <li><a href="#" class="navH">Home</a></li>
+              <li><a href="#" class="navH">Shop</a></li>
+              <li><a href="#" class="navH">Blog</a></li>
+              <li class="contact4">
+                <a href="#contact" class="navH">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Mobile hamburger menu ends here -->
+          <nav class="hnav">
+            <ul>
+              <li><a href="#" class="nav">Home</a></li>
+              <li><a href="#" class="nav">Shop</a></li>
+              <li><a href="#" class="nav">Blog</a></li>
+              <li class="item4"><a href="#contact" class="nav">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!-- Logo and Nav Bar ends here -->
+
+        <!-- Main Header starts here -->
+        <div class="heading">
+          <h1>Layering Collection</h1>
+          <button><a href="#">Shop Now</a></button>
+        </div>
+      </div>
+      <!-- Header wrapper ends here -->
+    </header>
+
+    <!-- Main styles start here -->
+    <main>
+      <div class="wrapper">
+        <!-- First section starts here -->
+        <section class="first">
+          <div class="mod">
+            <img
+              class="model"
+              src="./Assets/model.jpg"
+              alt="Male model wearing necklace and white blazer"
+            />
+          </div>
+          <div class="arrivals">
+            <h2>Check out new arrivals</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              nemo ab consequuntur tenetur optio ad enim illum architecto!
+              Recusandae, aliquam. Iusto in repellendus asperiores nemo natus
+              eveniet distinctio praesentium ex. Labore quasi dolorum aspernatur
+              odit debitis quod, ipsam consectetur necessitatibus voluptate!
+              Vitae, odio quidem veniam voluptatem ratione qui debitis nemo.
+            </p>
+            <button class="darkButton">
+              <a href="#" class="dark">Shop Now</a>
+            </button>
+          </div>
+        </section>
+        <!-- First section ends here -->
+      </div>
+
+      <!-- Second section starts here -->
+      <section class="second">
+        <div class="wrapper">
+          <div class="blog">
+            <h3>Latest Blog Posts</h3>
+            <h2>A Sustainable Future</h2>
+            <div class="chevrons">
+              <!-- Navigation arrow that disappears at 850px screen width -->
+              <a href="#" class="arrowLink"
+                ><i class="fas fa-chevron-left arrow"></i
+              ></a>
+              <p class="blogP">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Numquam, maiores qui! Non, dicta vel? Sint ea vitae soluta autem
+                optio eius explicabo doloribus cumque amet blanditiis
+                repellendus saepe, id et.
+              </p>
+              <!-- Navigation arrow that disappears at 850px screen width -->
+              <a href="#" class="arrowLink"
+                ><i class="fas fa-chevron-right arrow"></i
+              ></a>
+            </div>
+            <!-- Navigation arrows that appear at 850px screen width -->
+            <div class="flexArrow">
+              <a href="#" class="arrowFlex"
+                ><i class="fas fa-chevron-left arrow"></i
+              ></a>
+              <a href="#" class="arrowFlex"
+                ><i class="fas fa-chevron-right arrow"></i
+              ></a>
+            </div>
+            <button><a href="#">Learn More</a></button>
+          </div>
+        </div>
+      </section>
+      <!-- Second section ends here -->
+
+      <!-- Third section starts here -->
+      <div class="wrapper">
+        <section class="gallery">
+          <h2>Featured Items</h2>
+          <!-- Gallery starts here -->
+          <ul>
+            <li>
+              <div class="gallery1"></div>
+              <div class="price">
+                <p>Dole chains & pendents</p>
+                <p>$50</p>
+              </div>
+            </li>
+            <li>
+              <div class="gallery2"></div>
+              <div class="price">
+                <p>Made of steel ring</p>
+                <p>$30</p>
+              </div>
+            </li>
+            <li>
+              <div class="gallery3"></div>
+              <div class="price">
+                <p>Malvori watch</p>
+                <p>$120</p>
+              </div>
+            </li>
+          </ul>
+          <!-- Gallery ends here -->
+        </section>
+      </div>
+      <!-- Third section ends here -->
+    </main>
+    <!-- Main styles end here -->
+
+      <!-- Footer starts here -->
+      <footer id="contact">
+        <div class="wrapper">
+          <h2>Contact Us</h2>
+          <!-- Form starts here -->
+          <form action="#" method="#" class="myForm">
+            <div class="topLine">
+              <label for="yourName" class="sr-only">Name</label>
+              <input type="text" id="yourName" placeholder="Name" />
+
+              <label for="yourEmail" class="sr-only">Email</label>
+              <input type="email" id="yourEmail" placeholder="Email" />
+            </div>
+
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              cols="30"
+              rows="10"
+              minlength="5"
+              maxlength="300"
+            ></textarea>
+            <button class="formButton"><a href="#">Submit</a></button>
+          </form>
+          <!-- Form ends here -->
+        </div>
+        <!-- Footer Logo  -->
+        <div class="logo bottomLogo">
+          <p>Jewel</p>
+          <p class="logoBefore">Hub</p>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+  </body>
+</html>

@@ -1,0 +1,274 @@
+@media (max-width: 1250px) {
+  .arrivals {
+    width: 45%;
+  }
+}
+@media (max-width: 1200px) {
+  .gallery1,
+  .gallery2,
+  .gallery3 {
+    width: 275px;
+    height: 275px;
+  }
+  .price {
+    width: 180px;
+    height: 115px;
+    padding: 10px 15px 0 15px;
+  }
+  .price p {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1140px) {
+  header {
+    background-position: 50%;
+  }
+  .heading {
+    height: calc(100vh - 100px);
+  }
+  .first {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mod {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 500px;
+  }
+  img.model {
+    position: static;
+    width: 375px;
+    height: 500px;
+  }
+  .arrivals {
+    width: 100%;
+    align-items: center;
+  }
+  .chevrons {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .gallery1,
+  .gallery2,
+  .gallery3 {
+    width: 250px;
+    height: 250px;
+  }
+  .price {
+    width: 150px;
+    height: 95px;
+    padding: 5px 10px 0 10px;
+  }
+  .price p {
+    font-size: 2rem;
+  }
+  input {
+    width: 400px;
+  }
+  textarea {
+    width: 820px;
+  }
+}
+
+@media (max-width: 960px) {
+  .chevrons {
+    width: 825px;
+  }
+  .gallery {
+    margin-bottom: 50px;
+  }
+  .gallery ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery1,
+  .gallery2,
+  .gallery3 {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 75px;
+  }
+
+  .price {
+    width: 215px;
+    height: 135px;
+    padding: 15px 20px 0 20px;
+    left: 43px;
+  }
+  .price p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 8rem;
+    letter-spacing: 4px;
+    line-height: 70px;
+  }
+  .blogP {
+    width: 80vw;
+  }
+  .chevrons {
+    justify-content: center;
+    width: 100%;
+  }
+  .arrowLink {
+    display: none;
+  }
+  .flexArrow {
+    margin-bottom: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .arrowFlex:hover {
+    color: $secondary;
+  }
+  input {
+    width: 300px;
+  }
+  textarea {
+    width: 620px;
+  }
+}
+
+@media (min-width: 851px) {
+  .flexArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hnav {
+    display: none;
+  }
+  label.toggle {
+    display: initial;
+  }
+  ul.hiddeNav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    top: 110px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 7px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+  }
+
+  input[type="checkbox"]:checked + ul.hiddeNav {
+    left: 0;
+  }
+  ul.hiddeNav li {
+    padding: 20px;
+  }
+
+  ul.hiddeNav li:hover {
+    background-color: #f5f5f5;
+  }
+
+  ul.hiddeNav li:not(.contact4) {
+    border-bottom: 1px solid rgba(35, 34, 33, 0.5);
+  }
+
+  ul.hiddeNav li a {
+    color: $darkGrey;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 6rem;
+    letter-spacing: 3px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .topLine {
+    flex-direction: column;
+  }
+  input {
+    width: 80vw;
+  }
+  textarea {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .mod {
+    width: 300px;
+    height: 425px;
+  }
+  img.model {
+    width: 300px;
+    height: 425px;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    height: 60vh;
+  }
+  .heading {
+    height: calc(60vh - 100px);
+  }
+  h1 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+    line-height: 35px;
+  }
+  .arrivals h2,
+  .gallery h2,
+  .blog h2,
+  footer h2 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+  }
+  .mod {
+    width: 250px;
+    height: 350px;
+  }
+  img.model {
+    width: 250px;
+    height: 350px;
+  }
+  .gallery1,
+  .gallery2,
+  .gallery3 {
+    width: 250px;
+    height: 250px;
+  }
+  .price {
+    width: 150px;
+    height: 95px;
+    padding: 5px 10px 0 10px;
+  }
+  .price p {
+    font-size: 2rem;
+  }
+}

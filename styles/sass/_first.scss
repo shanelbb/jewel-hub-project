@@ -1,0 +1,51 @@
+.first {
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mod {
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+
+img.model {
+  width: 450px;
+  height: 650px;
+  filter: drop-shadow(20px 20px 1px rgba(123, 47, 0, 0.1));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.arrivals {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.arrivals h2,
+.gallery h2 {
+  color: $tertiary;
+  font-family: $secondFont;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 30px 0px;
+}
+
+.arrivals p {
+  color: $darkGrey;
+  padding-bottom: 40px;
+}
+
+a.dark {
+  color: $darkGrey;
+}

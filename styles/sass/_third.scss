@@ -1,0 +1,57 @@
+.gallery {
+  margin-bottom: 100px;
+}
+.gallery h2 {
+  text-align: center;
+}
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery ul li {
+  position: relative;
+}
+
+.gallery1 {
+  background-image: url(../../Assets/chains.jpg);
+  background-position: 30% 60%;
+}
+
+.gallery2 {
+  background-image: url(../../Assets/ring-model.jpg);
+  background-position: 80% 80%;
+}
+
+.gallery3 {
+  background-image: url(../../Assets/watch-model.jpg);
+  background-position: 80% 70%;
+}
+
+.gallery1,
+.gallery2,
+.gallery3 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+/* Description boxes with prices */
+.price {
+  background-color: $tertiaryTwo;
+  width: 215px;
+  height: 135px;
+  padding: 15px 20px 0 20px;
+  position: absolute;
+  top: 200px;
+  left: -25px;
+
+  p {
+    font-size: 2.8rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+}

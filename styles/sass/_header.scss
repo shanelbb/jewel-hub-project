@@ -1,0 +1,83 @@
+header {
+  background-image: url(../../Assets/header-image.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: scroll;
+}
+
+.headerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-family: $secondFont;
+  font-style: italic;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.logoBefore:before {
+  content: "//";
+}
+
+/* Top right navigation bar */
+input.toggle,
+label.toggle,
+.hiddeNav {
+  display: none;
+}
+
+label.toggle {
+  font-size: 4rem;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      &:not(.item4) {
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+.nav {
+  padding-bottom: 8px;
+  color: $white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s linear;
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $secondary;
+  }
+}
+
+/* Main heading */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1 {
+  font-family: $secondFont;
+  font-size: 10rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  line-height: 90px;
+}

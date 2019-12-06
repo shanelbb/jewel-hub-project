@@ -1,0 +1,52 @@
+.second {
+  background-image: url(../../Assets/banner-image.jpg);
+  background-size: cover;
+}
+
+.blog {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 30px;
+  &:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 8px;
+    border-bottom: 2px solid $secondary;
+  }
+}
+
+.blog p {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.blog button {
+  margin-bottom: 40px;
+}
+
+.blogP {
+  width: 700px;
+}
+.chevrons {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.arrow {
+  font-size: 5rem;
+}
+
+.arrowLink:hover,
+.arrowLink:focus {
+  color: $secondary;
+}
